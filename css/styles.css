@@ -1,0 +1,281 @@
+body {
+    color: white;
+    background-color: rgb(20, 119, 25);
+    font-size: 16px;
+    font-family: 'Style Script', cursive;
+
+}
+
+#header-nav {
+    background-color: rgb(57, 231, 41);
+    border-radius: 0;
+    border: 0;
+    opacity: 0.9;
+}
+#logo-img {
+    height: 80px;
+    width: 80px;
+    margin: 10px 20px 10px 0px;
+    border-radius: 40px;
+}
+.navbar-brand h1 {
+    font-family: 'Chela One', cursive;
+    text-transform: uppercase;
+    color: rgb(2, 14, 12);
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration:white;
+}
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    color: rgb(2, 14, 12);
+    text-align: center;
+}
+#nav-list a:hover,#phone div:hover {
+    color: white;
+}
+#nav-list a span {
+    font-size: 1.8em;
+}
+#phone {
+    margin-top: 5px;
+}
+#phone a {
+    text-align: right;
+    padding-bottom: 0;
+}
+#phone div {
+    color: rgb(2, 14, 12);
+    text-align: right;
+    padding-right: 15px;
+    font-weight: bold;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -55px;
+}
+
+
+/*Home Page*/
+.container .jumbotron {
+    box-shadow: 0 0 50px rgb(57, 231, 41);
+    border: 3px solid rgb(2, 14, 12);
+}
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid rgb(2, 14, 12);
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+    background: url("../img/menu.jpg") no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+#specials-tile {
+    background: url("../img/specials.jpg") no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+#map-tile {
+    border-radius: 10px;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: white;
+    opacity: 0.7;
+    color:rgb(2, 14, 12);
+    font-weight: 200;
+}
+
+.panel-footer {
+    margin-top: 20px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: rgb(11, 39, 11);
+    border-top: 0;
+}
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+#hours , #address {
+    line-height: 2;
+}
+#hours > span , #address > span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*Menu Categories Page*/
+.category-tile {
+    position: relative;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
+    background-color: white;
+    color:rgb(2, 14, 12);
+    font-weight: 200;
+    opacity: 0.7;
+    font-weight: 250;
+}
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title {
+    margin-bottom: 50px;
+}
+#lunche {
+    zoom:0.065;
+}
+
+/*Single category page*/
+#main-container {
+    margin-bottom: 30px;
+}
+.menu-item-tile {
+    margin-bottom: 25px;
+}
+.menu-item-tile hr {
+    width: 80%;
+}
+.menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: center;
+
+}
+.menu-item-tile .menu-item-price span {
+    font-size: 0.8em;
+}
+.menu-item-photo {
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15;
+    margin-left: auto;
+    max-width: 250px;
+}
+.menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    text-align: center;
+    background-color: black;
+}
+.menu-item-description {
+    padding-right: 30px;
+}
+h3.menu-item-title {
+    margin:0 0 10px;
+    font-weight: 250;
+}
+
+@media (min-width: 1200px) {
+    .container .jumbotron {
+      background: url('../img/back1200.jpg') no-repeat;
+      height: 675px;
+      box-shadow: 0 0 50px rgb(57, 231, 41);
+      border: 3px solid rgb(2, 14, 12);
+      opacity: 0.9;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container .jumbotron {
+        background: url('../img/back992.jpg') no-repeat;
+        height: 558px;
+        opacity: 0.9;
+      }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron {
+      background: url('../img/back768.jpg') no-repeat;
+      height: 432px;
+      opacity: 0.9;
+    }
+  }
+@media (max-width:767px) {
+    .navbar-brand {
+        padding-top: 0px;
+        height: 80px;
+    }
+    #collapsable-nav a {
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: rgb(57, 231, 41);
+        color: rgb(2, 14, 12);
+      }
+      #xs-deliver {
+        margin-top: 5px;
+        font-size: 1em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+      }
+      .container .jumbotron {
+          padding: 0;
+          box-shadow: 0 0 50px rgb(57, 231, 41);
+          border: 2px solid rgb(2, 14, 12);
+          opacity: 0.9;
+      }
+      #menu-tile, #specials-tile {
+          width: 360px;
+          margin: 0 auto 15px;
+      }
+      .panel-footer section hr {
+          width: 100;
+      }
+      .menu-item-photo {
+          margin-right: auto;
+      }
+      .menu-item-tile .menu-item-price {
+          text-align: center;
+      }
+      .menu-item-description {
+          text-align: center;
+      }
+}
+@media (max-width:479px) {
+    .col-xxs-12 {
+        position:relative;
+        min-height:1px;
+        padding-right:15px;
+        padding-left:15px;
+        float:left;
+        width: 100%;
+    }
+}
